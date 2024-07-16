@@ -1,3 +1,179 @@
-body{
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
     font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+
+
+}
+
+/* common*/
+.btn-1{
+    
+width: 196px;
+height: 44px;
+padding: 10px 24px;
+border-radius: 41px;
+background: rgb(224, 44, 109);
+border: none;
+color: rgb(255, 255, 255);
+font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+cursor: pointer;
+
+
+
+}
+
+/* header */
+header {
+    max-width: 1140px;
+    margin: auto;
+    
+}
+
+/*nav section*/
+
+nav {
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+nav .title {
+    /* border: 1px solid red; */
+    align-items: center;
+    display: flex;
+}
+
+nav .title h3 {
+    color: rgb(58, 58, 58);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    transition: all 1s;
+}
+
+nav ul li {
+
+    padding: 10px;
+    margin: 5px;
+
+}
+
+
+nav ul a {
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 2rem;
+    text-align: left;
+    padding: 1rem;
+}
+
+/* hero section */
+
+.hero {
+    /* border: 2px solid red; */
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .title {
+    /* border: 1px solid red; */
+    width: 50%;
+    margin: 5% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+
+
+
+}
+
+.hero .title h2 {
+    color: rgb(58, 58, 58);
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 50px;
+
+}
+
+.hero .title p {
+ 
+    color: rgb(58, 58, 58);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 40px 0;
+}
+
+.hero .img {
+    /* border: 2px solid red; */
+    width: 50%;
+    max-height: 414px;
+    background: url(images/Circle\ design.svg) no-repeat right center;
+    background-size: 80%;
+    text-align: center;
+    background-attachment: scroll;
+    padding: 50px 0;
+    text-align: right;
+   
+
+}
+
+.hero .img img {
+    width: 90%;
+}
+
+/* media query */
+
+@media screen and (min-width:280px) and (max-width:700px){
+    nav{
+        justify-content: center;
+    }
+    nav ul {
+        display: none;
+        
+    }
+    .hero{
+        flex-direction: column-reverse;
+    }
+
+    .hero .img{
+        width: 70%;
+        text-align: center;
+        background-position: center center;
+        background-size: 90%;
+    }
+
+    .hero .title{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .hero .title h2 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
 }
