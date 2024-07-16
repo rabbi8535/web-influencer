@@ -1,12 +1,13 @@
 * {
     padding: 0;
     margin: 0;
+   
 }
 
 body {
     font-family: "Poppins", sans-serif;
     text-transform: capitalize;
-    overflow-x: hidden;
+    
 
 
 }
@@ -66,12 +67,14 @@ nav ul {
     display: flex;
     list-style: none;
     transition: all 1s;
+
 }
 
 nav ul li {
 
     padding: 10px;
     margin: 5px;
+    
 
 }
 
@@ -308,7 +311,7 @@ main {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-  
+
 
 
 }
@@ -317,7 +320,7 @@ main {
     /* border: 1px solid red; */
     width: 50%;
     height: 100%;
-   
+
 
 }
 
@@ -337,7 +340,7 @@ main {
 
 .feature .container .title h3 {
     color: rgb(10, 8, 38);
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 700;
     line-height: 50px;
     text-align: left;
@@ -359,33 +362,81 @@ main {
 
 /* media query */
 
-@media screen and (min-width:280px) and (max-width:700px){
-    .feature .container{
+@media screen and (min-width:280px) and (max-width:700px) {
+    * {
+
+        overflow-x: hidden;
+    }
+    
+    .feature .container {
         flex-direction: column-reverse;
     }
 
-    .feature .container .img{
+    .feature .container .img {
         width: 100%;
         align-items: center;
         justify-content: center;
     }
-    .feature .container .img img{
+
+    .feature .container .img img {
         width: 100%;
     }
 
-    .feature .container .title{
+    .feature .container .title {
         width: 100%;
         justify-content: center;
         align-items: center;
     }
-    .feature .container .title h3{
-        font-size: 19px;
+
+    .feature .container .title h3 {
+    
         line-height: 25px;
         text-align: center;
     }
-    .feature .container .title p{
+
+    .feature .container .title p {
         font-size: 14px;
         line-height: 25px;
         text-align: center;
     }
 }
+
+/* footer section */
+
+footer {
+    max-width: 100%;
+    height: 100%;
+    background: #0A0826;
+    color: white;
+    padding: 100px;
+    text-align: center;
+
+}
+
+footer .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .container h3 {
+
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    
+
+}
+
+footer .container p {
+    color: rgb(217, 219, 225);
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 24px;
+
+}
+
